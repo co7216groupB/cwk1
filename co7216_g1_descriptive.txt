@@ -1,0 +1,21 @@
+Scenario Description 
+
+We have chosen to focus on the domain of technology news for use in a news aggregation application. The end application we have in mind is an intelligent news aggregation website but a mobile application could also be possible. 
+
+Our application would have several news sources including (but potentially not limited to) news websites, newspapers and news blogs. 
+
+We will devise a taxonomy that allows our application to find/filter news in such a way that end users will have much greater control over the news media they consume. 
+
+Our application would understand the relationships between the concepts in the technology news domain to be able to answer questions that require the combining of concepts such as the news format, the editor/publisher/source information and the (sub-)category. Our competency questions better demonstrate the power available with our taxonomy. 
+
+In order to choose the domain we looked at real world applications and thought about how they could be improved. The idea of news aggregation is not new but the user is limited in the amount of control they have. Even focusing just on technology news the amount of information available on the web and in paper based sources is too much for one person to read it all. Our application would be able to answer specific questions about all the news content as well as provide more precise filtering. 
+
+We chose this domain as the application would be useful to us (and others interested in technology). 
+
+Competency Questions
+
+* What can you tell me about the iPhone and equivalent devices from other manufacturers?
+* Which journalists focus on the topics of X, Y and Z?
+* What are the most recent discoveries in the field of tablet devices?
+* Which news sources write about news/events in my country?
+* What technology events can I visit (in my country) in the near future?
