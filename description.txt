@@ -1,21 +1,21 @@
-Scenario Description 
+Scenario Description
 
-We have chosen to focus on the domain of technology news for use in a news aggregation application. The end application we have in mind is an intelligent news aggregation website but a mobile application could also be possible. 
+We have chosen to focus on the domain of technology news for use in a news aggregation application. The end application we have in mind is an intelligent news aggregation website but a mobile application could also be possible.
 
-Our application would have several news sources including (but potentially not limited to) news websites, newspapers and news blogs. 
+Our application would have several news sources including (but potentially not limited to) news websites, newspapers and independents (personal blogs).
 
-We will devise a taxonomy that allows our application to find/filter news in such a way that end users will have much greater control over the news media they consume. 
+We will devise a taxonomy that allows our application to find and filter news in such a way that end users will have much greater control over the news media they consume.
 
-Our application would understand the relationships between the concepts in the technology news domain to be able to answer questions that require the combining of concepts such as the news format, the editor/publisher/source information and the (sub-)category. Our competency questions better demonstrate the power available with our taxonomy. 
+Our application would understand the relationships between the concepts in the technology news domain to be able to answer questions that require the combination of concepts such as the format, source or journalist. Our ontology will also model concepts that are written about in technology news (devices, software etc). Our competency questions better demonstrate the power available with our ontology.
 
-In order to choose the domain we looked at real world applications and thought about how they could be improved. The idea of news aggregation is not new but the user is limited in the amount of control they have. Even focusing just on technology news the amount of information available on the web and in paper based sources is too much for one person to read it all. Our application would be able to answer specific questions about all the news content as well as provide more precise filtering. 
+When choosing our domain we looked at real world applications available today. The idea of news aggregation is not new but news aggregation sites often overwhelm users with too much information from a large variety of sources. Most (if not all) services currently available do not understand the content presented to the user. At best these services allow users to filter by category. Our application would be able to answer more specific questions with regards to the news content and could provide more advanced filtering options. Favourite journalists and news sources can be given priority and the service could suggest recommended alternative articles based on the journalist, source and even article content. 
 
-We chose this domain as the application would be useful to us (and others interested in technology). 
+The application is an interesting choice because it allows us (the user) to find the news items of interest faster and more accurately. We chose the domain of technology as we are all interested in new technology (as can be expected from most computer science students). 
 
 Competency Questions
 
-* What can you tell me about the iPhone and equivalent devices from other manufacturers?
+* Which articles compare the iPhone with equivalent devices from other manufacturers?
 * Which journalists focus on the topics of X, Y and Z?
-* What are the most recent discoveries in the field of tablet devices?
-* Which news sources write about news/events in my country?
+* What are the most recent advancements in the field of tablet devices?
+* Which news sources write about news and events in my country?
 * What technology events can I visit (in my country) in the near future?
