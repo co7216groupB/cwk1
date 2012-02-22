@@ -1,0 +1,409 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://docs.staite.net/uni-co7216-cwk1#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://docs.staite.net/uni-co7216-cwk1">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+  </owl:Ontology>
+  <rdfs:Class rdf:ID="Journalist">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:ID="Person"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Class of all journalists (people who document the news)</rdfs:comment>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Apps">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all applications</rdfs:comment>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:ID="Software"/>
+    </rdfs:subClassOf>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="OpenSource">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all open source technology</rdfs:comment>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:ID="Technology"/>
+    </rdfs:subClassOf>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Blog">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Class of all blogs providing news content</rdfs:comment>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:ID="Independent"/>
+    </rdfs:subClassOf>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Newspaper">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all newspapers</rdfs:comment>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:ID="NewsSource"/>
+    </rdfs:subClassOf>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Researcher">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all researchers that research in the domain of technology</rdfs:comment>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="#Person"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:ID="NewsSubject"/>
+    </rdfs:subClassOf>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="#Independent">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="#NewsSource"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all independent news sources</rdfs:comment>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Tablet">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:ID="Device"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all tablet devices</rdfs:comment>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="News">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all news items</rdfs:comment>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Editor">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all editors</rdfs:comment>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="#Person"/>
+    </rdfs:subClassOf>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Desktop">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="#Device"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all desktop devices</rdfs:comment>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Article">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all written articles</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#News"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="#Device">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all devices</rdfs:comment>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="#Technology"/>
+    </rdfs:subClassOf>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Legal">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of legal concepts that can be related to technology</rdfs:comment>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="#NewsSubject"/>
+    </rdfs:subClassOf>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Server">
+    <rdfs:subClassOf rdf:resource="#Device"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all servers</rdfs:comment>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Region">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all geographical regions</rdfs:comment>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Interview">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of news items that are interviews</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#News"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="NewsWebsite">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Class of all news websites</rdfs:comment>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="#NewsSource"/>
+    </rdfs:subClassOf>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Mobile">
+    <rdfs:subClassOf rdf:resource="#Device"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all mobile devices</rdfs:comment>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Research">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all research in the domain of technology</rdfs:comment>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="#NewsSubject"/>
+    </rdfs:subClassOf>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="OS">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all operating systems</rdfs:comment>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="#Software"/>
+    </rdfs:subClassOf>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="#Person">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all people</rdfs:comment>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Developer">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all developers</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Person"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="#NewsSubject"/>
+    </rdfs:subClassOf>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Event">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all technology events</rdfs:comment>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="#NewsSubject"/>
+    </rdfs:subClassOf>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="#NewsSubject">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >
+      	
+    	The class of all things or concepts that are are considered news in the domain of technology. 
+    	An object/thing that is considered news worthy and has some loose relation to technology would
+    	be an instance of this class. 
+    	
+    	Example: the subject of "Apple iPhone" is a NewsSubject as there are news articles about it
+    	and it is related to technology. Similarly the subject "Patent Law" can be considered
+    	a NewsSubject because there exists some news articles talking about patents for technology. 
+    	
+    	</rdfs:comment>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Company">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all technology companies</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#NewsSubject"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Security">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all security topics that are related to technology</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#NewsSubject"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="#Technology">
+    <rdfs:subClassOf rdf:resource="#NewsSubject"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all technology</rdfs:comment>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="#NewsSource">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all sources of news</rdfs:comment>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Video">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all news items that are in video form</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#News"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="#Software">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all software</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Technology"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Embedded">
+    <rdfs:subClassOf rdf:resource="#Device"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all embedded devices</rdfs:comment>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Programming">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all programming news subjects</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#NewsSubject"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:ID="Notebook">
+    <rdfs:subClassOf rdf:resource="#Device"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The class of all notebook (laptop) devices</rdfs:comment>
+  </rdfs:Class>
+  <rdf:Property rdf:ID="researchAbout">
+    <rdfs:range rdf:resource="#Programming"/>
+    <rdfs:range rdf:resource="#Security"/>
+    <rdfs:range rdf:resource="#Technology"/>
+    <rdfs:domain rdf:resource="#Research"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="involvesCompany">
+    <rdfs:range rdf:resource="#Company"/>
+    <rdfs:domain rdf:resource="#Event"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="builds">
+    <rdfs:range rdf:resource="#Research"/>
+    <rdfs:range rdf:resource="#Device"/>
+    <rdfs:domain rdf:resource="#Company"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="organises">
+    <rdfs:range rdf:resource="#Event"/>
+    <rdfs:domain rdf:resource="#Company"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="editsFor">
+    <rdfs:range rdf:resource="#Newspaper"/>
+    <rdfs:range rdf:resource="#NewsWebsite"/>
+    <rdfs:domain rdf:resource="#Editor"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="presentsResearch">
+    <rdfs:range rdf:resource="#Research"/>
+    <rdfs:domain rdf:resource="#Event"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="researches">
+    <rdfs:range rdf:resource="#Research"/>
+    <rdfs:domain rdf:resource="#Researcher"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="hasSource">
+    <rdfs:range rdf:resource="#NewsSource"/>
+    <rdfs:domain rdf:resource="#News"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="worksForSource">
+    <rdfs:range rdf:resource="#NewsSource"/>
+    <rdfs:domain rdf:resource="#Journalist"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="runsSoftware">
+    <rdfs:range rdf:resource="#Software"/>
+    <rdfs:domain rdf:resource="#Device"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="involves">
+    <rdfs:range rdf:resource="#Software"/>
+    <rdfs:range rdf:resource="#Device"/>
+    <rdfs:range rdf:resource="#Person"/>
+    <rdfs:range rdf:resource="#Company"/>
+    <rdfs:domain rdf:resource="#Legal"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="worksIn">
+    <rdfs:range rdf:resource="#Company"/>
+    <rdfs:domain rdf:resource="#Person"/>
+  </rdf:Property>
+  
+  
+  
+  
+  
+  
+   <rdf:Property rdf:ID="availableInRegion">
+    <rdfs:range rdf:resource="#Region"/>
+    <rdfs:domain rdf:resource="#Device"/>
+  </rdf:Property>
+  
+   <rdf:Property rdf:ID="basedInRegion">
+    <rdfs:range rdf:resource="#Region"/>
+    <rdfs:domain rdf:resource="#Company"/>
+  </rdf:Property>
+  
+   <rdf:Property rdf:ID="ownsNewsSource">
+    <rdfs:range rdf:resource="#NewsSource"/>
+    <rdfs:domain rdf:resource="#Company"/>
+  </rdf:Property>
+  
+   <rdf:Property rdf:ID="contributesTo">
+    <rdfs:range rdf:resource="#OpenSource"/>
+    <rdfs:domain rdf:resource="#Company"/>
+    <rdfs:domain rdf:resource="#Developer"/>
+  </rdf:Property>
+  
+  
+  <rdf:Property rdf:ID="builtUsing">
+    <rdfs:domain rdf:resource="#Company"/>
+    <rdfs:range rdf:resource="#OpenSource"/>
+  </rdf:Property>
+  
+  
+  
+  
+  <rdf:Property rdf:ID="isRelevantTo">
+    <rdfs:range rdf:resource="#Region"/>
+    <rdfs:domain rdf:resource="#News"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="readsAbout">
+    <rdfs:range rdf:resource="#Programming"/>
+    <rdfs:domain rdf:resource="#Developer"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="develops">
+    <rdfs:range rdf:resource="#Software"/>
+    <rdfs:domain rdf:resource="#Company"/>
+    <rdfs:domain rdf:resource="#Developer"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="editsNews">
+    <rdfs:range rdf:resource="#News"/>
+    <rdfs:domain rdf:resource="#Editor"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="developsForDevice">
+    <rdfs:range rdf:resource="#Device"/>
+    <rdfs:domain rdf:resource="#Developer"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="newsAbout">
+    <rdfs:range rdf:resource="#NewsSubject"/>
+    <rdfs:domain rdf:resource="#News"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="runByOS">
+    <rdfs:range rdf:resource="#OS"/>
+    <rdfs:domain rdf:resource="#App"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="isAbout">
+    <rdfs:range rdf:resource="#Device"/>
+    <rdfs:range rdf:resource="#Software"/>
+    <rdfs:domain rdf:resource="#Event"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="documentsNews">
+    <rdfs:range rdf:resource="#News"/>
+    <rdfs:domain rdf:resource="#Journalist"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="isInterestedIn">
+    <rdfs:range rdf:resource="#NewsSubject"/>
+    <rdfs:domain rdf:resource="#Journalist"/>
+  </rdf:Property>
+  <rdf:Property rdf:ID="takesPlaceIn">
+    <rdfs:range rdf:resource="#Region"/>
+    <rdfs:domain rdf:resource="#Event"/>
+  </rdf:Property>
+  
+  <rdf:Property rdf:ID="hasCoverage">
+    <rdfs:range rdf:resource="#Newspaper"/>
+    <rdfs:domain rdf:resource="#Region"/>
+  </rdf:Property>
+  
+    <rdf:Property rdf:ID="hasCorrespondingWebsite">
+    <rdfs:range rdf:resource="#Newspaper"/>
+    <rdfs:domain rdf:resource="#NewsWebsite"/>
+  </rdf:Property>
+  
+  <rdf:Property rdf:ID="hasName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Person"/>
+    <rdfs:domain rdf:resource="#Software"/>
+    <rdfs:domain rdf:resource="#NewsSource"/>
+  </rdf:Property>
+  
+  <rdf:Property rdf:ID="isAboutLanguage">
+    <rdfs:domain rdf:resource="#Programming"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+  
+  <rdf:Property rdf:ID="hasTitle">
+    <rdfs:domain rdf:resource="#News"/>
+    <rdfs:domain rdf:resource="#Event"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+  
+  <rdf:Property rdf:ID="sourceURL">
+    <rdfs:domain rdf:resource="#News"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+  
+    <rdf:Property rdf:ID="hasHomepage">
+    <rdfs:domain rdf:resource="#NewsWebsite"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+  
+  <rdf:Property rdf:ID="takesPlaceInInstitution">
+    <rdfs:domain rdf:resource="#Research"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+  
+</rdf:RDF>
+
+<!-- Created with TopBraid -->
