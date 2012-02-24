@@ -640,184 +640,69 @@
     <rdfs:domain rdf:resource="#Company"/>
     <rdfs:range rdf:resource="#NewsSource"/>
   </rdf:Property>
-  <Editor rdf:ID="RichardBettsworth">
-    <editsFor>
-      <Newspaper rdf:ID="LeicesterMercury">
-        <hasCorrespondingWebsite>
-          <NewsWebsite rdf:ID="ThisIsLeicestershire">
-            <hasHomepage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >http://www.thisisleicestershire.co.uk</hasHomepage>
-            <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >This is Leicestershire</hasName>
-          </NewsWebsite>
-        </hasCorrespondingWebsite>
-        <hasCoverage>
-          <Region rdf:ID="Leicestershire">
+  <Article rdf:ID="News7">
+    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Nokia and Microsoft form partnership</hasTitle>
+    <newsAbout>
+      <Company rdf:ID="Nokia">
+        <basedInRegion>
+          <Region rdf:ID="Helsinki">
             <withinRegion>
-              <Region rdf:ID="England">
+              <Region rdf:ID="Sweden">
                 <withinRegion>
-                  <Region rdf:ID="UnitedKingdom">
-                    <withinRegion>
-                      <Region rdf:ID="EuropeanUnion"/>
-                    </withinRegion>
-                    <hasMainLanguage>
-                      <Language rdf:ID="EN">
-                        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                        >English</hasName>
-                      </Language>
-                    </hasMainLanguage>
-                  </Region>
+                  <Region rdf:ID="EuropeanUnion"/>
                 </withinRegion>
-                <hasMainLanguage rdf:resource="#EN"/>
+                <hasMainLanguage>
+                  <Language rdf:ID="SV">
+                    <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >Swedish</hasName>
+                  </Language>
+                </hasMainLanguage>
               </Region>
             </withinRegion>
-            <hasMainLanguage rdf:resource="#EN"/>
+            <hasMainLanguage rdf:resource="#SV"/>
           </Region>
-        </hasCoverage>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Leicester Mercury</hasName>
-      </Newspaper>
-    </editsFor>
-    <worksForSource rdf:resource="#LeicesterMercury"/>
-    <livesIn rdf:resource="#Leicestershire"/>
-    <knowsLanguage rdf:resource="#EN"/>
-    <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Richard Bettsworth</hasName>
-    <editsFor rdf:resource="#ThisIsLeicestershire"/>
-  </Editor>
-  <Company rdf:ID="Dell">
-    <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Dell Inc.</hasName>
-    <basedInRegion>
-      <Region rdf:ID="Texas">
-        <hasMainLanguage rdf:resource="#EN"/>
-      </Region>
-    </basedInRegion>
-    <builds>
-      <Desktop rdf:ID="DellInspiron620">
-        <providesAccessTo>
-          <Network rdf:ID="Broadband"/>
-        </providesAccessTo>
-        <runsSoftware>
-          <App rdf:ID="Eclipse">
+        </basedInRegion>
+        <builds>
+          <Mobile rdf:ID="NokiaLumia800">
+            <runsSoftware>
+              <App rdf:ID="WhatsApp"/>
+            </runsSoftware>
+            <providesAccessTo>
+              <Network rdf:ID="Mobile-3G"/>
+            </providesAccessTo>
             <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >Eclipse IDE</hasName>
-            <rdf:type rdf:resource="#OpenSource"/>
-          </App>
-        </runsSoftware>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Dell Inspiron 620</hasName>
-        <availableInRegion>
-          <Region rdf:ID="Global"/>
-        </availableInRegion>
-        <hasMBMemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-        >3000</hasMBMemoryCapacity>
-        <runsSoftware>
-          <App rdf:ID="Skype"/>
-        </runsSoftware>
-        <hasGBDiskCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-        >500</hasGBDiskCapacity>
-        <runsSoftware>
-          <OS rdf:ID="Ubuntu11.10">
-            <hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >11.10</hasVersion>
-            <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >Ubuntu 11.10</hasName>
-            <builtUsing>
-              <App rdf:ID="Firefox">
+            >Nokia Lumia 800</hasName>
+            <runsSoftware>
+              <OS rdf:ID="WindowsPhone7.5Mango">
+                <hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >7.5 Mango</hasVersion>
                 <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                >Mozilla Firefox</hasName>
-                <rdf:type rdf:resource="#OpenSource"/>
-              </App>
-            </builtUsing>
-            <builtUsing>
-              <Software rdf:ID="Linux">
-                <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                >Linux (Kernel)</hasName>
-                <rdf:type rdf:resource="#OpenSource"/>
-              </Software>
-            </builtUsing>
-          </OS>
-        </runsSoftware>
-        <runsSoftware>
-          <App rdf:ID="iTunes"/>
-        </runsSoftware>
-        <runsSoftware>
-          <OS rdf:ID="Windows7">
+                >Microsoft Windows Phone</hasName>
+              </OS>
+            </runsSoftware>
             <hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >7</hasVersion>
-            <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >Microsoft Windows</hasName>
-          </OS>
-        </runsSoftware>
-        <hasProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Intel Core i5</hasProcessor>
-        <runsSoftware rdf:resource="#Firefox"/>
-      </Desktop>
-    </builds>
-  </Company>
-  <Company rdf:ID="Nokia">
-    <basedInRegion>
-      <Region rdf:ID="Helsinki">
-        <withinRegion>
-          <Region rdf:ID="Sweden">
-            <withinRegion rdf:resource="#EuropeanUnion"/>
-            <hasMainLanguage>
-              <Language rdf:ID="SV">
-                <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-                >Swedish</hasName>
-              </Language>
-            </hasMainLanguage>
-          </Region>
-        </withinRegion>
-        <hasMainLanguage rdf:resource="#SV"/>
-      </Region>
-    </basedInRegion>
-    <builds>
-      <Mobile rdf:ID="NokiaLumia800">
-        <runsSoftware>
-          <App rdf:ID="WhatsApp"/>
-        </runsSoftware>
-        <providesAccessTo>
-          <Network rdf:ID="Mobile-3G"/>
-        </providesAccessTo>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Nokia Lumia 800</hasName>
-        <runsSoftware>
-          <OS rdf:ID="WindowsPhone7.5Mango">
-            <hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >7.5 Mango</hasVersion>
-            <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >Microsoft Windows Phone</hasName>
-          </OS>
-        </runsSoftware>
-        <hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >800</hasVersion>
-        <availableInRegion rdf:resource="#Global"/>
-        <runsSoftware rdf:resource="#iTunes"/>
-        <runsSoftware rdf:resource="#Skype"/>
-        <providesAccessTo>
-          <Network rdf:ID="WIFI"/>
-        </providesAccessTo>
-      </Mobile>
-    </builds>
-  </Company>
-  <Video rdf:ID="News4">
-    <isRelevantTo rdf:resource="#Global"/>
-    <newsAbout rdf:resource="#Skype"/>
-    <hasSource>
-      <NewsWebsite rdf:ID="BBC">
-        <hasHomepage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://www.bbc.co.uk/news/</hasHomepage>
-      </NewsWebsite>
-    </hasSource>
-    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Microsoft's Bill Gates says he advocated Skype takeover</hasTitle>
-    <hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
-    >286</hasLength>
-    <datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-    >2011-05-18</datePublished>
-    <hasLanguage rdf:resource="#EN"/>
+            >800</hasVersion>
+            <availableInRegion>
+              <Region rdf:ID="Global"/>
+            </availableInRegion>
+            <runsSoftware>
+              <App rdf:ID="iTunes"/>
+            </runsSoftware>
+            <runsSoftware>
+              <App rdf:ID="Skype"/>
+            </runsSoftware>
+            <providesAccessTo>
+              <Network rdf:ID="WIFI"/>
+            </providesAccessTo>
+          </Mobile>
+        </builds>
+      </Company>
+    </newsAbout>
+    <sourceURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.bbc.co.uk/news/business-12427680</sourceURL>
+    <newsAbout rdf:resource="#WindowsPhone7.5Mango"/>
+    <rdf:type rdf:resource="#Video"/>
     <newsAbout>
       <Company rdf:ID="Microsoft">
         <organises>
@@ -834,7 +719,14 @@
                     >Chris Koenig MSDN Blog</hasName>
                   </Blog>
                 </worksForSource>
-                <isInterestedIn rdf:resource="#Windows7"/>
+                <isInterestedIn>
+                  <OS rdf:ID="Windows7">
+                    <hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >7</hasVersion>
+                    <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                    >Microsoft Windows</hasName>
+                  </OS>
+                </isInterestedIn>
                 <isInterestedIn rdf:resource="#WindowsPhone7.5Mango"/>
                 <documentsNews>
                   <Article rdf:ID="News3">
@@ -846,7 +738,12 @@
                     <newsAbout rdf:resource="#Microsoft"/>
                     <isRelevantTo rdf:resource="#Global"/>
                     <hasSource rdf:resource="#ChrisKoenigMSDNBlog"/>
-                    <hasLanguage rdf:resource="#EN"/>
+                    <hasLanguage>
+                      <Language rdf:ID="EN">
+                        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                        >English</hasName>
+                      </Language>
+                    </hasLanguage>
                     <datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
                     >2009-01-07</datePublished>
                   </Article>
@@ -863,7 +760,11 @@
                     >chriskoenig.net</hasHomepage>
                   </Blog>
                 </worksForSource>
-                <livesIn rdf:resource="#Texas"/>
+                <livesIn>
+                  <Region rdf:ID="Texas">
+                    <hasMainLanguage rdf:resource="#EN"/>
+                  </Region>
+                </livesIn>
                 <develops rdf:resource="#Windows7"/>
                 <isInterestedIn rdf:resource="#Microsoft"/>
                 <develops rdf:resource="#WindowsPhone7.5Mango"/>
@@ -908,8 +809,169 @@
         <develops rdf:resource="#WindowsPhone7.5Mango"/>
         <develops rdf:resource="#Windows7"/>
         <developsForOS rdf:resource="#Windows7"/>
+        <researches>
+          <Research rdf:ID="KinectTechnology">
+            <researchAbout>
+              <Device rdf:ID="Kinect">
+                <availableInRegion rdf:resource="#Global"/>
+              </Device>
+            </researchAbout>
+            <takesPlaceInInstitution rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Microsoft Research</takesPlaceInInstitution>
+          </Research>
+        </researches>
       </Company>
     </newsAbout>
+    <hasSource>
+      <NewsWebsite rdf:ID="BBC">
+        <hasHomepage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://www.bbc.co.uk/news/</hasHomepage>
+      </NewsWebsite>
+    </hasSource>
+    <datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2011-02-11</datePublished>
+    <isRelevantTo rdf:resource="#Global"/>
+    <hasLanguage rdf:resource="#EN"/>
+    <hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >273</hasLength>
+  </Article>
+  <Editor rdf:ID="RichardBettsworth">
+    <editsFor>
+      <Newspaper rdf:ID="LeicesterMercury">
+        <hasCorrespondingWebsite>
+          <NewsWebsite rdf:ID="ThisIsLeicestershire">
+            <hasHomepage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >http://www.thisisleicestershire.co.uk</hasHomepage>
+            <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >This is Leicestershire</hasName>
+          </NewsWebsite>
+        </hasCorrespondingWebsite>
+        <hasCoverage>
+          <Region rdf:ID="Leicestershire">
+            <withinRegion>
+              <Region rdf:ID="England">
+                <withinRegion>
+                  <Region rdf:ID="UnitedKingdom">
+                    <withinRegion rdf:resource="#EuropeanUnion"/>
+                    <hasMainLanguage rdf:resource="#EN"/>
+                  </Region>
+                </withinRegion>
+                <hasMainLanguage rdf:resource="#EN"/>
+              </Region>
+            </withinRegion>
+            <hasMainLanguage rdf:resource="#EN"/>
+          </Region>
+        </hasCoverage>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Leicester Mercury</hasName>
+      </Newspaper>
+    </editsFor>
+    <worksForSource rdf:resource="#LeicesterMercury"/>
+    <livesIn rdf:resource="#Leicestershire"/>
+    <knowsLanguage rdf:resource="#EN"/>
+    <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Richard Bettsworth</hasName>
+    <editsFor rdf:resource="#ThisIsLeicestershire"/>
+  </Editor>
+  <Video rdf:ID="News6">
+    <hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >224</hasLength>
+    <hasLanguage rdf:resource="#EN"/>
+    <newsAbout>
+      <Researcher rdf:ID="CraigMundie">
+        <knowsLanguage rdf:resource="#EN"/>
+        <worksIn rdf:resource="#Microsoft"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Craig Mundie</hasName>
+        <researches rdf:resource="#KinectTechnology"/>
+      </Researcher>
+    </newsAbout>
+    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microsoft research chief: Kinect puts us back on top</hasTitle>
+    <hasSource rdf:resource="#BBC"/>
+    <isRelevantTo rdf:resource="#Global"/>
+    <interviewTo rdf:resource="#CraigMundie"/>
+    <newsAbout rdf:resource="#Microsoft"/>
+    <sourceURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.bbc.co.uk/news/business-12581442</sourceURL>
+    <newsAbout rdf:resource="#KinectTechnology"/>
+    <rdf:type rdf:resource="#Interview"/>
+    <datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2011-02-27</datePublished>
+    <newsAbout rdf:resource="#Kinect"/>
+  </Video>
+  <Programming rdf:ID="Java">
+    <isAboutLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Java</isAboutLanguage>
+    <rdf:type rdf:resource="#OpenSource"/>
+  </Programming>
+  <Security rdf:ID="Hacking"/>
+  <Company rdf:ID="Dell">
+    <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Dell Inc.</hasName>
+    <basedInRegion rdf:resource="#Texas"/>
+    <builds>
+      <Desktop rdf:ID="DellInspiron620">
+        <providesAccessTo>
+          <Network rdf:ID="Broadband"/>
+        </providesAccessTo>
+        <runsSoftware>
+          <App rdf:ID="Eclipse">
+            <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Eclipse IDE</hasName>
+            <rdf:type rdf:resource="#OpenSource"/>
+          </App>
+        </runsSoftware>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Dell Inspiron 620</hasName>
+        <availableInRegion rdf:resource="#Global"/>
+        <hasMBMemoryCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >3000</hasMBMemoryCapacity>
+        <runsSoftware rdf:resource="#Skype"/>
+        <hasGBDiskCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+        >500</hasGBDiskCapacity>
+        <runsSoftware>
+          <OS rdf:ID="Ubuntu11.10">
+            <hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >11.10</hasVersion>
+            <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Ubuntu 11.10</hasName>
+            <builtUsing>
+              <App rdf:ID="Firefox">
+                <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >Mozilla Firefox</hasName>
+                <rdf:type rdf:resource="#OpenSource"/>
+              </App>
+            </builtUsing>
+            <builtUsing>
+              <Software rdf:ID="Linux">
+                <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >Linux (Kernel)</hasName>
+                <rdf:type rdf:resource="#OpenSource"/>
+              </Software>
+            </builtUsing>
+          </OS>
+        </runsSoftware>
+        <runsSoftware rdf:resource="#iTunes"/>
+        <runsSoftware rdf:resource="#Windows7"/>
+        <hasProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Intel Core i5</hasProcessor>
+        <runsSoftware rdf:resource="#Firefox"/>
+      </Desktop>
+    </builds>
+  </Company>
+  <Video rdf:ID="News4">
+    <isRelevantTo rdf:resource="#Global"/>
+    <newsAbout rdf:resource="#Skype"/>
+    <hasSource rdf:resource="#BBC"/>
+    <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microsoft's Bill Gates says he advocated Skype takeover</hasTitle>
+    <hasLength rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >286</hasLength>
+    <datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2011-05-18</datePublished>
+    <hasLanguage rdf:resource="#EN"/>
+    <newsAbout rdf:resource="#Microsoft"/>
     <sourceURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >http://www.bbc.co.uk/news/business-13434352</sourceURL>
     <interviewTo>
